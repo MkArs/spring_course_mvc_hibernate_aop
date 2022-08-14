@@ -22,8 +22,6 @@
             <td>${emp.salary}</td>
         </tr>
     </c:forEach>
-
-
 </table>
 
 
