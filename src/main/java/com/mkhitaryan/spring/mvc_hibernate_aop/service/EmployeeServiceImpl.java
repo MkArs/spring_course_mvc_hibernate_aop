@@ -1,5 +1,6 @@
 package com.mkhitaryan.spring.mvc_hibernate_aop.service;
 
+import com.mkhitaryan.spring.mvc_hibernate_aop.dao.EmployeeDAO;
 import com.mkhitaryan.spring.mvc_hibernate_aop.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,7 @@ import java.util.List;
 public class EmployeeServiceImpl implements EmployeeService{
 
     @Autowired
-    private EmployeeService employeeDAO;
+    private EmployeeDAO employeeDAO;
 
     @Override
     @Transactional
